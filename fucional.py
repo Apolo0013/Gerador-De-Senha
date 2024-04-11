@@ -4,7 +4,24 @@ from string import  punctuation , ascii_lowercase , ascii_uppercase
 #from gerador_de_senha import c , v , op
 
 
+def linha(vezes = 1):
+    '''
+    --> printa uma linha e repete isso.
+    parametro vezes(opcional): vem com padrão 1 vai repetir uma vez, o usuario tem esse poder
+    de fala quantas vez, vai se repetir essa linha.
+    '''
+    for c in range(0,vezes):
+        print('\033[1;36m▃\033[m'*50)
+
+
 def senha(op, c , v):
+    '''
+    --> essa funcao faz todas as senha.
+    parametro op: vai receber a opção de senha do usuario
+    paramentro c: esse outra variavel que vai dizer quantas vezes vai se repetir dependedo da opção
+    do usuario na variavel v.
+    parametro v: vai receber a quantidade de vez que a senha vai se repetir.
+    '''
     if op == 1 or op == 7:
         print(end ='' 'Senha: ')
         for c0 in range(1 , c+1):
